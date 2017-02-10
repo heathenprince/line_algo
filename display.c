@@ -53,7 +53,7 @@ void clear_screen( screen s ) {
   c.blue = 0;
 
   for ( y=0; y < YRES; y++ )
-    for ( x=0; x < XRES; x++)      
+    for ( x=0; x < XRES; x++ )      
       s[x][y] = c;
 }
 
@@ -107,8 +107,7 @@ void save_extension( screen s, char *file) {
   f = popen(line, "w");
   fprintf(f, "P3\n%d %d\n%d\n", XRES, YRES, MAX_COLOR);
   for ( y=0; y < YRES; y++ ) {
-    for ( x=0; x < XRES; x++) 
-      
+    for ( x=0; x < XRES; x++ )
       fprintf(f, "%d %d %d ", s[x][y].red, s[x][y].green, s[x][y].blue);
     fprintf(f, "\n");
   }

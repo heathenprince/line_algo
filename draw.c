@@ -9,7 +9,7 @@
 void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
   int x = x0;
   int y = y0;
-
+	
   int A = abs(y0 - y1);
   int B = abs(x0 - x1) * -1;
 
@@ -17,15 +17,15 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
 
   A *= 2;
   B *= 2; //all added values will be double henceforth; might as well do the calculations here
-
   
   while( x <= x1 ) {
-    plot(x,y);
+    plot(s,c,x,y);
     if( d > 0 ) { 
       y++;
       d += B;
     }
     x++;
     d += A;
-}
+	}
 
+}
