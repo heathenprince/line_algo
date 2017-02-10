@@ -121,10 +121,6 @@ Inputs:   screen s
 Returns: 
 Will display the screen s on your monitor
 
-IMPORTANT NOTE:
-There is a slight chance this won't work if 
-you are not using a standard ububtu system.
-
 02/12/10 09:16:30
 jdyrlandweaver
 ====================*/
